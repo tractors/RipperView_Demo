@@ -39,10 +39,12 @@ public class UIUtils {
             windowManager.getDefaultDisplay().getMetrics(displayMetrics);
             int systemBarHeight=getSystemBarHeight(context);
             //判断横屏还竖屏
+            //横屏
             if(displayMetrics.widthPixels>displayMetrics.heightPixels){
                 this.displayMetricsWidth=(float)(displayMetrics.heightPixels);
                 this.displayMetricsHeight=(float)(displayMetrics.widthPixels-systemBarHeight);
             }else{
+                //竖屏
                 this.displayMetricsWidth=(float)(displayMetrics.widthPixels);
                 this.displayMetricsHeight=(float)(displayMetrics.heightPixels-systemBarHeight);
             }
