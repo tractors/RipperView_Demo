@@ -6,6 +6,9 @@ import android.view.WindowManager;
 
 import java.lang.reflect.Field;
 
+/**
+ * UI布局适配工具类
+ */
 public class UIUtils {
     //标准值  正常情况下应该保存在配置文件中
     public static final float STANDARD_WIDTH=1080f;
@@ -27,6 +30,11 @@ public class UIUtils {
         if (instance == null) {
             throw new RuntimeException("UiUtil应该先调用含有构造方法进行初始化");
         }
+        return instance;
+    }
+
+    public static UIUtils notifyInstance(Context context){
+        instance = new UIUtils(context);
         return instance;
     }
 

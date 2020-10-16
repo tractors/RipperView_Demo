@@ -31,4 +31,16 @@
         android:layout_height="wrap_content"
         android:text="加载是否成功对话框" />
 
+    <Button
+        android:id="@+id/bt_ui_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏幕适配" />
+
+    <Button
+        android:id="@+id/bt_parallax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="平行控件" />
+
 </LinearLayout>

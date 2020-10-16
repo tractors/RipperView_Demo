@@ -32,5 +32,17 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        findViewById<Button>(R.id.bt_ui_relative_layout).setOnClickListener {
+            Intent(this,UIRelativeLayoutActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        findViewById<Button>(R.id.bt_parallax).setOnClickListener {
+            Intent(this,ParallaxActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 }
