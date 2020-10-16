@@ -4,6 +4,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 
+/**
+ * 平行控件适配器
+ */
 class ParallaxAdapter: FragmentPagerAdapter {
 
     private var fragments : MutableList<ParallaxFragment> = ArrayList()

@@ -15,6 +15,9 @@ import com.will.ripperview_demo.bean.ParallaxViewTag;
 
 import java.lang.reflect.Constructor;
 
+/**
+ * 平行控件的填充器
+ */
 class ParallaxLayoutInflater2 extends android.view.LayoutInflater {
     private ParallaxFragment fragment;
     protected ParallaxLayoutInflater2(Context context) {

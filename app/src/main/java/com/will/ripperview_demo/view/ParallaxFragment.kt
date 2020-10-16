@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
+/**
+ * fragment 加载基础布局
+ */
 class ParallaxFragment : Fragment() {
 
     //加载布局 了解有哪些需要差异化制定

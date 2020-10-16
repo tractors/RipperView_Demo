@@ -1,5 +1,8 @@
 package com.will.ripperview_demo.bean
- 
+
+/**
+ * 标签tag bean
+ */
 class ParallaxViewTag{
      var index: Float = 0f
      var xIn: Float = 0f
