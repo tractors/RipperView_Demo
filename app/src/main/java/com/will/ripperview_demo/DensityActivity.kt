@@ -2,15 +2,15 @@ package com.will.ripperview_demo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.will.ripperview_demo.view.Density
 
 /**
- * 加载成功和失败的对话框动画实例
+ * 按屏幕密度适配屏幕
  */
-class PathMeasureAnimatorActivity : AppCompatActivity() {
-
+class DensityActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pathmeasure_animator)
-
+        Density.setDensity(application,this)
+        setContentView(R.layout.activity_density)
     }
 }

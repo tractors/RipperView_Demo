@@ -21,7 +21,7 @@ class UIRelativeLayout @JvmOverloads constructor(
 
             val childCount : Int = this.childCount
 
-            for (index in 1 until  childCount){
+            for (index in 0 until  childCount){
                 val child : View = this.getChildAt(index)
                 val layoutParams : LayoutParams = child.layoutParams as LayoutParams
                 layoutParams.width = (layoutParams.width * scaleX).toInt()

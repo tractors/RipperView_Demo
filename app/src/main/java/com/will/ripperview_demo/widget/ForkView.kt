@@ -78,13 +78,13 @@ class ForkView @JvmOverloads constructor(
             if (v1 == 1f) {
                 valueAnimator2.start()
             }
-        } else if (animation!! == valueAnimator2) {
+        } else if (animation == valueAnimator2) {
             v2 = animation.animatedValue as Float
             invalidate()
             if (v2 == 1f) {
                 valueAnimator3.start()
             }
-        } else if (animation!! == valueAnimator3) {
+        } else if (animation == valueAnimator3) {
             v3 = animation.animatedValue as Float
             invalidate()
         }

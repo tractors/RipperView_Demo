@@ -42,5 +42,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="平行控件" />
+    <Button
+        android:id="@+id/bt_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏幕布局缩放适配" />
+    <Button
+        android:id="@+id/bt_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏幕百分比布局" />
 
+    <Button
+        android:id="@+id/bt_customize_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义的屏幕百分比布局" />
+    <Button
+        android:id="@+id/bt_density"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按屏幕密度适配" />
+
+    <Button
+        android:id="@+id/bt_display_cutout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="刘海屏幕适配" />
 </LinearLayout>

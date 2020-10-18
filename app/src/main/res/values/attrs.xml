@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="RippleView">
-        <attr name="ripple_anim_color" format="color"/>
+        <attr name="ripple_anim_color" format="color" />
         <attr name="ripple_anim_type" format="enum">
-            <enum name="fillRipple" value="0"/>
-            <enum name="strokeRipple" value="1"/>
+            <enum name="fillRipple" value="0" />
+            <enum name="strokeRipple" value="1" />
         </attr>
-        <attr name="radius" format="integer"/>
-        <attr name="strokeWidth" format="integer"/>
+        <attr name="radius" format="integer" />
+        <attr name="strokeWidth" format="integer" />
     </declare-styleable>
 
     <attr name="a_in" format="float" />
@@ -16,4 +16,14 @@
     <attr name="x_out" format="float" />
     <attr name="y_in" format="float" />
     <attr name="y_out" format="float" />
+
+    <!--    定义自定义百分比布局属性-->
+    <declare-styleable name="PercentLayout">
+        <attr name="widthPercent" format="float"/>
+        <attr name="heightPercent" format="float"/>
+        <attr name="marginLeftPercent" format="float"/>
+        <attr name="marginRightPercent" format="float"/>
+        <attr name="marginTopPercent" format="float"/>
+        <attr name="marginBottomPercent" format="float"/>
+    </declare-styleable>
 </resources>

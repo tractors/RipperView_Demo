@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.will.ripperview_demo.view.ViewCalculateUtil
 import org.w3c.dom.Text
 
+/**
+ * 不同手机屏幕适配实例
+ */
 class UIRelativeLayoutActivity : AppCompatActivity() {
 
     private  var text3 : TextView? = null

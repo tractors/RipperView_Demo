@@ -17,11 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RippleActivity"/>
-        <activity android:name=".PathMeasureAnimatorActivity"/>
-        <activity android:name=".MarkAndForkActivity"/>
-        <activity android:name=".UIRelativeLayoutActivity"/>
-        <activity android:name=".ParallaxActivity"/>
+        <activity android:name=".RippleActivity" android:label="RippleActivity"/>
+        <activity android:name=".PathMeasureAnimatorActivity" android:label="PathMeasureAnimatorActivity"/>
+        <activity android:name=".MarkAndForkActivity" android:label="MarkAndForkActivity"/>
+        <activity android:name=".UIRelativeLayoutActivity" android:label="UIRelativeLayoutActivity"/>
+        <activity android:name=".ParallaxActivity" android:label="ParallaxActivity"/>
+        <activity android:name=".ScreenLayoutActivity" android:label="ScreenLayoutActivity"/>
+        <activity android:name=".PercentActivity" android:label="PercentActivity"/>
+        <activity android:name=".CustomizePercentActivity" android:label="CustomizePercentActivity"/>
+        <activity android:name=".DensityActivity" android:label="DensityActivity"/>
+        <activity android:name=".DisplayCutoutActivity" android:label="DisplayCutoutActivity"/>
+        <activity android:name=".MusicActivity" android:label="MusicActivity"/>
     </application>
 
 </manifest>

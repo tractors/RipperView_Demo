@@ -4,13 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * 加载成功和失败的对话框动画实例
+ * 屏幕缩放比例适配实例
  */
-class PathMeasureAnimatorActivity : AppCompatActivity() {
+class ScreenLayoutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pathmeasure_animator)
-
+        setContentView(R.layout.activity_screen_layout)
     }
 }

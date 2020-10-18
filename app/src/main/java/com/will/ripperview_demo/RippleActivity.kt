@@ -6,6 +6,9 @@ import android.widget.ImageView
 import com.will.ripperview_demo.view.UIUtils
 import com.will.ripperview_demo.widget.RippleView
 
+/**
+ * 仿网易云水波纹实例
+ */
 class RippleActivity : AppCompatActivity() {
     private var imageView : ImageView? = null
     private var rippleView : RippleView?= null

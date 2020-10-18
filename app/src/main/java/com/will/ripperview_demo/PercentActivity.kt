@@ -4,13 +4,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * 加载成功和失败的对话框动画实例
+ * Google的百分比屏幕适配实例
  */
-class PathMeasureAnimatorActivity : AppCompatActivity() {
+class PercentActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pathmeasure_animator)
-
+        setContentView(R.layout.activity_percent)
     }
+
 }

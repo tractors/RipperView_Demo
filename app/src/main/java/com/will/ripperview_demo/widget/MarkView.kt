@@ -78,7 +78,7 @@ class MarkView @JvmOverloads constructor(
             if (v1 == 1f){
                 valueAnimator2.start()
             }
-        } else if (animation!! == valueAnimator2){
+        } else if (animation == valueAnimator2){
             v2 = animation.animatedValue as Float
             invalidate()
         }
