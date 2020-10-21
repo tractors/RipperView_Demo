@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">RipperView_Demo</string>
+    <array name="music">
+        <item>足够</item>
+        <item>情话</item>
+        <item>Trap</item>
+        <item>恶作剧</item>
+        <item>东西</item>
+        <item>我爱你</item>
+        <item>世界第一等</item>
+        <item>吻别</item>
+        <item>有多少爱可以重来</item>
+        <item>我是不是该安静的走开</item>
+        <item>嫉妒</item>
+        <item>温柔</item>
+        <item>心事</item>
+        <item>年少有为</item>
+        <item>像风一样</item>
+        <item>黎明前的黑暗</item>
+        <item>狮子座</item>
+    </array>
 </resources>

@@ -9,7 +9,8 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 
 /**
- *布局屏幕适配计算工具类
+ *view设置长宽等属性的逻辑处理
+ * 需使用px
  */
 class ViewCalculateUtil {
 
@@ -27,8 +28,7 @@ class ViewCalculateUtil {
             leftMargin: Int,
             rightMargin: Int
         ) {
-            val layoutParams: RelativeLayout.LayoutParams =
-                view.layoutParams as RelativeLayout.LayoutParams
+            val layoutParams: RelativeLayout.LayoutParams = view.layoutParams as RelativeLayout.LayoutParams
             if (layoutParams != null) {
                 if (width != RelativeLayout.LayoutParams.MATCH_PARENT && width != RelativeLayout.LayoutParams.WRAP_CONTENT && width != RelativeLayout.LayoutParams.FILL_PARENT) {
                     layoutParams.width = UIUtils.getInstance().getWidth(width)
@@ -167,6 +167,27 @@ class ViewCalculateUtil {
             }
 
             if (height != LinearLayout.LayoutParams.MATCH_PARENT && height != LinearLayout.LayoutParams.WRAP_CONTENT && height != LinearLayout.LayoutParams.FILL_PARENT){
+                layoutParams.height = UIUtils.getInstance().getWidth(height)
+            } else {
+                layoutParams.height = height
+            }
+
+            layoutParams.topMargin = UIUtils.getInstance().getHeight(topMargin)
+            layoutParams.bottomMargin = UIUtils.getInstance().getHeight(bottomMargin)
+            layoutParams.leftMargin = UIUtils.getInstance().getWidth(leftMargin)
+            layoutParams.rightMargin = UIUtils.getInstance().getWidth(rightMargin)
+            view.layoutParams = layoutParams
+        }
+
+        fun setViewRelativeLayoutParam(view: View,width: Int,height: Int,topMargin: Int,bottomMargin: Int,leftMargin: Int,rightMargin: Int){
+            val layoutParams : RelativeLayout.LayoutParams = view.layoutParams as RelativeLayout.LayoutParams
+            if (width != RelativeLayout.LayoutParams.MATCH_PARENT && width != RelativeLayout.LayoutParams.WRAP_CONTENT && width != RelativeLayout.LayoutParams.FILL_PARENT){
+                layoutParams.width = UIUtils.getInstance().getWidth(width)
+            } else {
+                layoutParams.width = width
+            }
+
+            if (height != RelativeLayout.LayoutParams.MATCH_PARENT && height != RelativeLayout.LayoutParams.WRAP_CONTENT && height != RelativeLayout.LayoutParams.FILL_PARENT){
                 layoutParams.height = UIUtils.getInstance().getWidth(height)
             } else {
                 layoutParams.height = height

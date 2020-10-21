@@ -21,4 +21,7 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item> <!--把该属性改为false即可使menu设置位于toolbar之下-->
+    </style>
 </resources>

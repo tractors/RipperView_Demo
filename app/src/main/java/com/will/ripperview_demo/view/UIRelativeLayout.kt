@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.RelativeLayout
 
 /**
- * 不同手机屏幕适配工具类
+ * 不同手机屏幕适配工具类,适用于自定义容器
  */
 class UIRelativeLayout @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
