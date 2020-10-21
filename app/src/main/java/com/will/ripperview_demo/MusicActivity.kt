@@ -153,8 +153,8 @@ class MusicActivity : AppCompatActivity() {
         //"14"模糊度，"3"图片缩放3倍后再进行模糊
         Glide.with(this)
             .load(IMAGE_URL_MEDIUM)
-            .error(R.mipmap.ic_launcher)
-            .placeholder(R.mipmap.ic_launcher)
+            .error(R.drawable.ic_blackground)
+            .apply(RequestOptions().placeholder(R.drawable.ic_blackground))
             .transition(DrawableTransitionOptions().crossFade(500))//加载动画
             .apply (bitmapTransform(BlurTransformation(this,200,3)))
             .into(object : CustomTarget<Drawable>(){
@@ -173,7 +173,7 @@ class MusicActivity : AppCompatActivity() {
 
         Glide.with(this)
             .load(IMAGE_URL_MEDIUM)
-            .apply(RequestOptions().placeholder(R.mipmap.ic_launcher))
+            .apply(RequestOptions().placeholder(R.drawable.ic_blackground))
             .apply(bitmapTransform(BlurTransformation(this,200,3)))//设置高斯模糊
             .listener(object : RequestListener<Drawable>{ //监听加载状态
                 override fun onLoadFailed(
